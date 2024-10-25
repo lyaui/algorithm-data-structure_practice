@@ -6,7 +6,7 @@ function minSubLength(arr, num) {
 
   while (right < arr.length) {
     currentSum += arr[right];
-    while (num < currentSum) {
+    while (num <= currentSum) {
       length = Math.min(length, right - left + 1);
       currentSum -= arr[left];
       left++;
